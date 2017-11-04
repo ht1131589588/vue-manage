@@ -1,0 +1,92 @@
+$blue:#3190e8;//蓝色
+$bg_color:#fff;//默认背景颜色
+$font_color:#444;//默认字体颜色
+$default-nav-bc:#424f63;//默认左侧导航栏背景颜色
+$default-nav-fc:#fff;//默认左侧导航栏字体颜色
+$fsize:14px;//默认字体大小
+$border_color:#e6e6e6;//默认通用边框颜色
+
+
+
+// 背景图片地址和大小
+@mixin bis($url) { 
+	background-image: url(@url);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+//定位全屏
+.allcover{
+	position:absolute;
+	top:0;
+	right:0;
+}
+
+//transform上下左右居中
+.ctt {  
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+//定位上下左右居中
+@mixin ctp($width, $height) {  
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    margin-top: -$height/2;
+    margin-left: -$width/2;
+}
+
+//定位上下居中
+.tb {  
+	position: absolute;
+	top: 50%;
+    transform: translateY(-50%);
+}
+
+//定位左右居中
+.lr {  
+	position: absolute;
+	left: 50%;
+    transform: translateX(-50%);
+}
+
+//宽高
+@mixin wh($width, $height){
+	width: $width;
+	height: $height;
+}
+
+//字体大小、行高、字体
+@mixin ft($size, $line-height) {  
+	font-size: $size;
+	line-height:$line-height;
+}
+
+//字体大小，颜色
+@mixin sc($size, $color){
+	font-size: $size;
+	color: $color;
+}
+
+//flex 布局和 子元素 对其方式
+@mixin fj($type: space-between){
+	display: flex;
+	justify-content: $type;
+}
+
+//单边框 底部
+@mixin bb($color: $border_color){
+	border-bottom: 1px solid $color;
+}
+@mixin br($color: $border_color){
+	border-right: 1px solid $color;
+}
+@mixin bl($color: $border_color){
+	border-left: 1px solid $color;
+}
+@mixin bt($color: $border_color){
+	border-top: 1px solid $color;
+}
