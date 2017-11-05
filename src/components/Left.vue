@@ -24,8 +24,8 @@
         </template>
         <el-menu-item-group>
           <span slot="title" v-show="isCollapse">数据管理</span>
-          <el-menu-item index="3-1">文章列表</el-menu-item>
-          <el-menu-item index="3-2">标签列表</el-menu-item>
+          <el-menu-item index="/data-manage/articleList">文章列表</el-menu-item>
+          <el-menu-item index="/data-manage/classifyList">标签列表</el-menu-item>
         </el-menu-item-group>
       </el-submenu>
       <el-submenu index="4">
@@ -35,15 +35,15 @@
         </template>
         <el-menu-item-group>
           <span slot="title" v-show="isCollapse">数据分析</span>
-          <el-menu-item index="4-1">用户分布</el-menu-item>
-          <el-menu-item index="4-2">类型分析</el-menu-item>
+          <el-menu-item index="/data-analysis/userMap">用户分布</el-menu-item>
+          <el-menu-item index="/data-analysis/classifyMap">类型分析</el-menu-item>
         </el-menu-item-group>
       </el-submenu>
-      <el-menu-item index="5">
+      <el-menu-item index="/setting">
         <i class="el-icon-setting"></i>
         <span slot="title">设置</span>
       </el-menu-item>
-      <el-menu-item index="6">
+      <el-menu-item index="/explain">
         <i class="el-icon-warning"></i>
         <span slot="title">说明</span>
       </el-menu-item>

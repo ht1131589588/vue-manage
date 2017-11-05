@@ -3,7 +3,17 @@
     <div class="left">
       <a href="javascript:;" @click="toggleCollapse" class="collapse-btn"><i class="iconfont icon-zhedie"></i></a>
     </div>
-    <div class="right"></div>
+    <div class="right">
+      <el-dropdown>
+        <span class="el-dropdown-link">
+          小菜一碟<i class="el-icon-arrow-down el-icon--right"></i>
+        </span>
+        <el-dropdown-menu slot="dropdown">
+          <el-dropdown-item>修改密码</el-dropdown-item>
+          <el-dropdown-item>退出登录</el-dropdown-item>
+        </el-dropdown-menu>
+      </el-dropdown>
+    </div>
   </div>
 </template>
 <script>
