@@ -55,7 +55,7 @@ export default {
           color: this.colors,
           title: {
               text: '走势图',
-              subtext: ''
+              // subtext: ''
           },
           tooltip: {
               trigger: 'axis'
@@ -79,17 +79,15 @@ export default {
               boundaryGap: false,
               data: this.yDates
           },
-          yAxis:  {
-              type: 'value',
-              boundaryGap: false,
-              data: this.yDates
-          },
+          // yAxis: {
+          //     type: 'value'
+          // },
           yAxis: [
               {
                 type: 'value',
-                name: '数量',
+                name: '用户/管理员',
                 min: 0,
-                max: 5000,
+                max: 1000,
                 position: 'left',
                 axisLine: {
                     lineStyle: {
@@ -102,9 +100,9 @@ export default {
               },
               {
                 type: 'value',
-                name: '用户、文章',
+                name: '文章',
                 min: 0,
-                max: 2000,
+                max: 2500,
                 position: 'right',
                 axisLine: {
                     lineStyle: {
@@ -121,6 +119,7 @@ export default {
                   name:'新注册用户',
                   type:'line',
                   data:this.xDatas[0],
+                  yAxisIndex: 0,
                   markPoint: {
                       data: [
                           {type: 'max', name: '最大值'},
@@ -132,7 +131,7 @@ export default {
                   name:'新增管理员',
                   type:'line',
                   data:this.xDatas[1],
-                  yAxisIndex: 1,
+                  yAxisIndex: 0,
                   markPoint: {
                       data: [
                           {type: 'max', name: '最大值'},
