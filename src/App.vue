@@ -11,5 +11,6 @@ export default {
 </script>
 
 <style type="text/sass" lang="scss">
+  @import './assets/css/dxy-ui.min.css';
   @import './style/common';
 </style>
