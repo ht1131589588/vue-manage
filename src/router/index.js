@@ -31,27 +31,27 @@ export default new Router({
       },{
         path: '/user-manage/userlist',
         component: UserList,
-        meta: []
+        meta: ['用户管理','用户列表']
       },{
         path: '/user-manage/managerlist',
         component: ManagerList,
-        meta: []
+        meta: ['用户管理','管理员列表']
       },{
         path: '/data-manage/articleList',
         component: ArticleList,
-        meta: []
+        meta: ['数据管理','文章列表']
       },{
         path: '/data-manage/classifyList',
         component: ClassifyList,
-        meta: []
+        meta: ['数据管理','标签列表']
       },{
         path: '/data-analysis/userMap',
         component: UserMap,
-        meta: []
+        meta: ['数据分析','用户分布']
       },{
         path: '/data-analysis/classifyMap',
         component: ClassifyMap,
-        meta: []
+        meta: ['数据分析','标签分析']
       },{
         path: '/setting',
         component: Setting,

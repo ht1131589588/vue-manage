@@ -36,7 +36,7 @@
         <el-menu-item-group>
           <span slot="title" v-show="isCollapse">数据分析</span>
           <el-menu-item index="/data-analysis/userMap">用户分布</el-menu-item>
-          <el-menu-item index="/data-analysis/classifyMap">类型分析</el-menu-item>
+          <el-menu-item index="/data-analysis/classifyMap">标签分析</el-menu-item>
         </el-menu-item-group>
       </el-submenu>
       <el-menu-item index="/setting">

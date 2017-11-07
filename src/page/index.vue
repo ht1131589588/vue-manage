@@ -6,6 +6,7 @@
         <top></top>
       </el-header>
       <el-main>
+        <header-bread></header-bread>
         <router-view></router-view>
       </el-main>
     </el-container>
@@ -15,6 +16,7 @@
 <script>
 import MainLeft from '@/components/Left'
 import Top from '@/components/Top'
+import headerBread from '@/components/headerBread.vue'
 export default {
   data () {
     return {
@@ -24,7 +26,8 @@ export default {
   },
   components:{
     MainLeft,
-    Top
+    Top,
+    headerBread
   }
 }
 </script>

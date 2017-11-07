@@ -32,8 +32,7 @@
 </template>
 
 <script>
-import mainChat from '@/components/chart'
-
+import mainChat from '@/components/chart';
 export default {
   data () {
     return {
@@ -43,7 +42,6 @@ export default {
           [220, 182, 191, 234, 290, 330, 310],
           [820, 932, 901, 400, 1290, 1320, 1320]
         ],
-      
     }
   },
   components:{
