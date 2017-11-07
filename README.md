@@ -1,5 +1,6 @@
 # vue-manage
-<<<<<<< HEAD
+采用vue2+element+dxy-ui来实现前台界面。
+dxy-ui是一个纯css框架，不附带js，也有很完整的文档，感觉很不错
 
 > A Vue.js project
 
