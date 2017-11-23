@@ -17,11 +17,24 @@
   </div>
 </template>
 <script>
- export default {
+  import fetch from '@/config/fetch'
+  export default {
     data() {
       return {
         isCollapse: false
       };
+    },
+    mounted(){
+      console.log(fetch)
+      // fetch('/signin',{
+      //   email:'admin@example.com',
+      //   password:'123456'
+      // },"POST").then(function(res){
+      //   console.log(res);
+      // })
+      fetch('/').then(function(res){
+        console.log(res);
+      })
     },
     methods: {
       toggleCollapse() {
