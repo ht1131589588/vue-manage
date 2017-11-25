@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import Login from '@/page/account/login'
 import Index from '@/page/Index'
 import home from '@/page/home/index'
 import UserList from '@/page/user-manage/userList'
@@ -15,11 +16,11 @@ Vue.use(Router)
 
 export default new Router({
   routes: [
-    // {
-    //   path: '/',
-    //   name: 'Index',
-    //   component: Index
-    // },
+    {
+      path: '/login',
+      name: 'login',
+      component: Login
+    },
     {
       path: '/',
       name: 'manage',
