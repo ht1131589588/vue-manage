@@ -34,9 +34,15 @@
     },
     methods: {
       async submitForm() {
-        console.log(this.loginForm);
-        const res = await login({user_name: this.loginForm.username, password: this.loginForm.password})
-      }
+        const res = await login({username: this.loginForm.username, password: this.loginForm.password});
+        if(res.status==1){
+
+          this.$router.push('/');
+        }
+      },
+      ...mapActions([
+        'getAdminInfo'
+      ])
     }
   }
 </script>
